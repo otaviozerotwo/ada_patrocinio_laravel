@@ -29,7 +29,7 @@ body{
     font-weight: 500 !important;
 }
 
-.btn{
+.btn-login{
     font-size: 15px !important;
     padding: 15px !important;
     --bs-btn-bg: #190F54 !important;
@@ -83,6 +83,11 @@ body{
     color: white !important;
 }
 
+#btn-retorna-tela-login{
+    width: 200px;
+    /* height: 50px; */
+    border-radius: 30px;
+}
 /* -------------------- carrossel home -------------------- */
 
 .carousel-inner{

@@ -57,7 +57,7 @@
         <!-- botão login -->
         <div class="login-div">
             <a href="/login">
-                <button type="button" class="btn btn-primary btn-lg">Entrar | Cadastrar</button>
+                <button type="button" class="btn btn-login btn-primary btn-lg">Entrar | Cadastrar</button>
             </a>
         </div>
     </div>
