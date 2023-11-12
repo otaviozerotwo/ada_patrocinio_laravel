@@ -30,30 +30,15 @@ class UserController extends Controller
         }
     }
 
-    public function catchEmail(Request $request)
-    {
-        $this->validate($request, [
-            'email' => 'required',
-        ],[
-            'email.required'=> 'Campo e-mail é obrigatório!',
-        ]);
-
-        $request->session()->put('email', $this);
-
-        return redirect()->route('create.user');
-    }
-
     public function create(Request $request)
     {
-        $email = $request->session()->get('email');
-
-        return view('userRegistration.index', ['email'=> $email]);
+        
     }
 
     public function store(Request $request)
     {
         $userName = $request->input('name');
-        $userEmail = $request->input('email');
+        $userEmail = $request->session()->get('email');
         $userPassword = $request->input('password');
         
         $user = new User();
@@ -62,8 +47,6 @@ class UserController extends Controller
         $user->password = $userPassword;
         
         $user->save();
-
-        $request->session()->forget('email');
 
         return redirect('/login');
     }

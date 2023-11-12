@@ -55,10 +55,11 @@
             </ul>
         </div>
         <!-- botão login -->
-        <div class="login-div">
-            <a href="/login">
-                <button type="button" class="btn btn-login btn-primary btn-lg">Entrar | Cadastrar</button>
-            </a>
+        <div class="me-3">
+            <a class="btn btn-login btn-primary" href="/login">Fazer login</a>
+        </div>
+        <div>
+            <a class="btn btn-login btn-primary" href="/cadastro">Criar conta</a>
         </div>
     </div>
 </nav>
