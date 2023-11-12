@@ -28,16 +28,16 @@
             <form action="{{ route('cadastro.store') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="form-floating pt-2">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Nome" name="name">
+                    <label for="floatingInput">Nome</label>
+                </div>
+                <div class="form-floating pt-2">
                     <input type="email" class="form-control" id="floatingInput" placeholder="E-mail" name="email">
                     <label for="floatingInput">E-mail</label>
                 </div>
-                <div class="form-floating pt-2">
+                <div class="form-floating py-2">
                     <input type="password" class="form-control" id="floatingInput" placeholder="Senha" name="password">
                     <label for="floatingInput">Senha</label>
-                </div>
-                <div class="form-floating py-2">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="Nome" name="name">
-                    <label for="floatingInput">Nome</label>
                 </div>
 
                 <div class="form-check text-start">

@@ -25,6 +25,12 @@
                 </div>
             @endif
 
+            @if (session('success'))
+                <div class="alert alert-success">
+                    {{ session('success') }}
+                </div>
+            @endif
+
             <form action="{{ route('login.auth') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="form-floating py-2">

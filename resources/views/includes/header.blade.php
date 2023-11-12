@@ -6,7 +6,7 @@
         </button>
 
         <div class="logo-div">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/">
                 <img src="{{ asset('assets/img/logo_ada.png') }}" class="logo-img" alt="">
             </a>
         </div>

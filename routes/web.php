@@ -23,4 +23,5 @@ Route::controller(UserController::class)->group(function () {
     Route::post('/auth', [UserController::class, 'auth'])->name('login.auth');
     Route::get('/cadastro', [UserController::class,'create'])->name('cadastro.create');
     Route::post('/cadastro', [UserController::class,'store'])->name('cadastro.store');
+    Route::get('/verify/{token}', [UserController::class,'verify'])->name('verify');
 });
