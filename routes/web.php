@@ -19,7 +19,8 @@ Route::get('/', function () {
 });
 
 Route::controller(UserController::class)->group(function () {
-    Route::get('/login', [UserController::class, 'index'])->name('User.index');
-    Route::post('/auth', [UserController::class, 'auth'])->name('auth.user');
-    Route::get('/cadastro', [UserController::class,'create'])->name('create.user');
+    Route::get('/login', [UserController::class, 'index'])->name('login.index');
+    Route::post('/auth', [UserController::class, 'auth'])->name('login.auth');
+    Route::get('/cadastro', [UserController::class,'create'])->name('cadastro.create');
+    Route::post('/cadastro', [UserController::class,'store'])->name('cadastro.store');
 });

@@ -32,7 +32,7 @@ class UserController extends Controller
 
     public function create(Request $request)
     {
-        
+        return view('userRegistration.index');
     }
 
     public function store(Request $request)

@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="d-flex mb-5 justify-content-center">
-        <h1>Complete os dados para criar sua conta</h1>
+        <h1>Crie sua conta</h1>
     </div>
 
     <div class="d-flex justify-content-center">    
@@ -25,22 +25,22 @@
                 </div>
             @endif
 
-            <form action="{{ route('store.user') }}" method="POST" enctype="multipart/form-data">
+            <form action="{{ route('cadastro.store') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="form-floating pt-2">
                     <input type="email" class="form-control" id="floatingInput" placeholder="E-mail" name="email">
-                    <label for="floatingInput" value="{{ $email }}">E-mail</label>
+                    <label for="floatingInput">E-mail</label>
                 </div>
                 <div class="form-floating pt-2">
                     <input type="password" class="form-control" id="floatingInput" placeholder="Senha" name="password">
                     <label for="floatingInput">Senha</label>
                 </div>
-                <div class="form-floating pt-2">
+                <div class="form-floating py-2">
                     <input type="text" class="form-control" id="floatingInput" placeholder="Nome" name="name">
                     <label for="floatingInput">Nome</label>
                 </div>
 
-                <div class="form-check text-start mb-5">
+                <div class="form-check text-start">
                     <input type="checkbox" class="form-check-input" id="flexCheckDefault" required>
                     <label for="form-check-label" class="form-check-label-modificado">Ao criar sua conta você concorda com nossos Termos de uso e com nossa Política de privacidade</label>
                 </div>
@@ -57,6 +57,6 @@
     </div>
 
     <div class="d-flex justify-content-center mt-2">
-        <a id="btn-retorna-tela-login" class="btn btn-secondary py-3" href="/login">Faça seu Login</a>
+        <a class="btn btn-secondary btn-secondary-modificado py-3" href="{{ route('login.index') }}">Faça seu Login</a>
     </div>
 @endsection

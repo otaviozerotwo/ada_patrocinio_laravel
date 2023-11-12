@@ -89,9 +89,8 @@ body{
     color: white !important;
 }
 
-#btn-retorna-tela-login{
+.btn-secondary-modificado{
     width: 200px;
-    /* height: 50px; */
     border-radius: 30px;
 }
 /* -------------------- carrossel home -------------------- */
