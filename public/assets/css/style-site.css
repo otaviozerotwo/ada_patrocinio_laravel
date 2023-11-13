@@ -1,0 +1,190 @@
+*{ 
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+}
+
+/* -------------------- cabeçalho -------------------- */
+
+.navbar{
+    background-color: #F5F5F5 !important;
+    border-bottom: 1px solid #D8D9DA !important;
+}
+
+.menu{
+    margin-left: 90px;
+}
+
+.logo-img{
+    width: 70px;
+    height: 70px;
+}
+
+.nav-link,
+.dropdown-item{
+    color: #61677A !important;
+    font-weight: 500 !important;
+}
+
+.btn-login{
+    font-size: 12px !important;
+    padding: 15px !important;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #61677A;
+    background-color: white;
+    border: 1px solid #190F54;
+}
+
+.btn-login:hover{
+    background-color: #4632A3;
+    border-color: #190F54;
+}
+
+/* -------------------- login/cadastro -------------------- */
+
+.body-modificado{
+    background-color: #1A0F52;
+    color: white;
+}
+
+@media(max-width: 992px){
+    .margin-login-cadastro-modificado{
+        justify-content: center !important;
+    }
+}
+
+@media(min-width: 993px){
+    .margin-login-cadastro-modificado{
+        margin: 0px 0px 0px 85px !important;
+    }
+}
+
+.card-modificado{
+    margin-bottom: 20px !important;
+    background-color: #1A0F52 !important;
+    border: 2px solid !important;
+    border-color: #2E4374 !important;
+    border-radius: 10px !important;
+}
+
+.card-title-modificado,
+.form-check-label-modificado{
+    color: white !important;
+}
+
+.btn-modificado{
+    border-radius: 30px !important;
+    background-color: rgb(34, 101, 218) !important;
+}
+
+.btn-modificado:hover{
+    background-color:rgb(34, 150, 218) !important;
+}
+
+.link-login-cadastro-modificado{
+    color: white !important;
+}
+
+.btn-secondary-modificado{
+    width: 200px;
+    border-radius: 30px;
+}
+
+/* -------------------- carrossel home -------------------- */
+
+.carousel-inner{
+    height: 20em;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.carousel-item{
+    height: 100%;
+}
+
+#carrossel-item-1{
+    background: #1A0F52 url(/assets/img/img-site/carrossel_1.png) center/contain no-repeat;
+}
+
+#carrossel-item-2{
+    background: #1A0F52 url(/assets/img/img-site/carrossel_2.jpg) center/contain no-repeat;
+}
+
+#carrossel-item-3{
+    background: #1A0F52 url(/assets/img/img-site/carrossel_3.jpg) center/contain no-repeat;
+}
+
+/* -------------------- sessão #1 - conteúdo home e about-------------------- */
+
+.container-modificado{
+    margin-top: 10px;
+}
+
+.sessao1-titulo{
+    font-size: 30px;
+    padding-bottom: 40px;
+}
+
+.sessao1-img{
+    --bs-border-width: 0px !important;
+}
+
+/* -------------------- sessão #2 - conteúdo home row #1-------------------- */
+
+#sessao2-home-row1{
+    padding: 50px;
+}
+
+#sessao2-home-titulo,
+#sessao2-home-subtitulo{
+    display: flex;
+    justify-content: center;
+}
+
+#sessao2-home-subtitulo{
+    color: #61677A;
+}
+
+#sessao2-home-titulo{
+    font-size: 40px;
+}
+
+/* -------------------- sessão #3 - conteúdo home row #1-------------------- */
+
+.tipo-doacao a{
+    text-decoration: none;
+}
+
+.sessao3-home-titulo{
+    text-align: center;
+    padding: 15px;
+}
+
+.img-doacao{
+    width: 18rem;
+    height: 12rem;
+}
+
+/* -------------------- rodapé - conteúdo home -------------------- */
+
+#container-footer{
+    background-color: #F5F5F5 !important;
+    border-top: 1px solid #D8D9DA !important;
+    margin-top: 50px;
+}
+
+#redes-sociais{
+    margin-top: 30px;
+}
+
+#redes-sociais ul{
+    justify-content: flex-end;
+}
+
+#footer{
+    justify-content: center !important;
+}

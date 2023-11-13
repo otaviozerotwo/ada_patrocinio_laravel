@@ -43,12 +43,17 @@
                     <label for="floatingInput">Senha</label>
                 </div>
 
-                <div class="w-100 pt-2 pb-4">
-                    <a class="link-login-cadastro-modificado" href="#">Esqueceu a senha?</a>
+                <div class="form-check text-start mt-2">
+                    <input type="checkbox" class="form-check-input" id="flexCheckDefault" name="remember" id="form-check-label">
+                    <label for="form-check-label" class="form-check-label-modificado">Lembrar-me</label>
                 </div>
                 
                 <div class="d-flex justify-content-center">
                     <button type="submit" class="btn btn-primary w-50 py-3 btn-modificado" name="logar">Acessar conta</button>
+                </div>
+
+                <div class="w-100 pt-2 mt-4">
+                    <a class="link-login-cadastro-modificado" href="#">Esqueceu a senha?</a>
                 </div>
             </form>
         </div>

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-xl bg-body-tertiary">
+<nav class="navbar navbar-expand-xl">
     <div class="container">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
             aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
@@ -7,7 +7,7 @@
 
         <div class="logo-div">
             <a class="navbar-brand" href="/">
-                <img src="{{ asset('assets/img/logo_ada.png') }}" class="logo-img" alt="">
+                <img src="{{ asset('assets/img/img-site/logo_ada.png') }}" class="logo-img" alt="">
             </a>
         </div>
 

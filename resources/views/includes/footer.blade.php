@@ -5,12 +5,12 @@
             <ul class="nav list-unstyled d-flex">
                 <li class="ms-3">
                     <a class="text-body-secondary" href="https://www.facebook.com/adapatrociniomg/" target="_blank">
-                        <img src="{{ asset('assets/img/facebook.png') }}" alt="" width="28" height="28">
+                        <img src="{{ asset('assets/img/img-site/facebook.png') }}" alt="" width="28" height="28">
                     </a>
                 </li>
                 <li class="ms-3">
                     <a class="text-body-secondary" href="https://www.instagram.com/adapatrocinio/" target="_blank">
-                        <img src="{{ asset('assets/img/instagram.png') }}" alt="" width="28" height="28">
+                        <img src="{{ asset('assets/img/img-site/instagram.png') }}" alt="" width="28" height="28">
                     </a>
                 </li>
             </ul>

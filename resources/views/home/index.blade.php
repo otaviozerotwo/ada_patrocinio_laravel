@@ -33,7 +33,7 @@
         </div>
     </div>
 
-    <div class="container container-modificado">
+    <div class="container container-modificado mt-5">
         <!-- sessão #1 - conteúdo home -->
         <div class="row align-items-start">
             <div class="col-lg-6 align-self-center">
@@ -52,8 +52,8 @@
 
             <div class="col-lg-6">
                 <picture class="sessao1-img">
-                    <source srcset="{{ asset('assets/img/img-home-1.jpeg') }}" type="image/jpg">
-                    <img src="{{ asset('assets/img/img-home-1.jpeg') }}" class="img-fluid img-thumbnail" alt="...">
+                    <source srcset="{{ asset('assets/img/img-site/img-home-1.jpeg') }}" type="image/jpg">
+                    <img src="{{ asset('assets/img/img-site/img-home-1.jpeg') }}" class="img-fluid img-thumbnail" alt="...">
                 </picture>
             </div>
         </div>
@@ -69,7 +69,7 @@
                 <div class="tipo-doacao col-lg-4">
                     <a href="#"
                         class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-                        <img src="{{ asset('assets/img/img_doe_medicamentos.jpg') }}" class="rounded img-doacao" alt="...">
+                        <img src="{{ asset('assets/img/img-site/img_doe_medicamentos.jpg') }}" class="rounded img-doacao" alt="...">
                         <h5 class="sessao3-home-titulo">Doação de Medicamentos</h5>
                     </a>
                 </div>
@@ -77,7 +77,7 @@
                 <div class="tipo-doacao col-lg-4">
                     <a href="https://pag.ae/bjj8DKb" target="_blank"
                         class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-                        <img src="{{ asset('assets/img/img_doe_dinheiro.jpg') }}" class="rounded img-doacao" alt="...">
+                        <img src="{{ asset('assets/img/img-site/img_doe_dinheiro.jpg') }}" class="rounded img-doacao" alt="...">
                         <h5 class="sessao3-home-titulo">Doação em Dinheiro</h5>
                     </a>
                 </div>
@@ -85,7 +85,7 @@
                 <div class="tipo-doacao col-lg-4">
                     <a href="#"
                         class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-                        <img src="{{ asset('assets/img/img_doe_racao.jpg') }}" class="rounded img-doacao" alt="...">
+                        <img src="{{ asset('assets/img/img-site/img_doe_racao.jpg') }}" class="rounded img-doacao" alt="...">
                         <h5 class="sessao3-home-titulo">Doação de Ração</h5>
                     </a>
                 </div>
