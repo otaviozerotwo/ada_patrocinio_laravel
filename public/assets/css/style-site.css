@@ -29,6 +29,14 @@ body{
     font-weight: 500 !important;
 }
 
+.dropdown-menu{
+    background-color: #F5F5F5 !important;
+}
+
+.dropdown-item:hover{
+    background-color: #F5F5F5;
+}
+
 .btn-login{
     font-size: 12px !important;
     padding: 15px !important;

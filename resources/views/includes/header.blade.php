@@ -14,41 +14,41 @@
         <div class="menu collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="nav-underline navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre Nós</a>
+                    <a class="nav-link" href="{{ route('about.index') }}">Sobre Nós</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contato</a>
+                    <a class="nav-link" href="{{ route('contact.index') }}">Contato</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Eventos</a>
+                    <a class="nav-link" href="{{ route('events.index') }}">Eventos</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="#">Como Ajudar</a>
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="">Como Ajudar</a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a class="dropdown-item" href="#">Quero ser voluntário</a>
+                            <a class="dropdown-item" href="{{ route('howToHelp.voluntary') }}">Quero ser voluntário</a>
                         </li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="#">Serviços</a>
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="">Serviços</a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a class="dropdown-item" href="#">Agendar Castração</a>
+                            <a class="dropdown-item" href="{{ route('services.scheduleCastration') }}">Agendar Castração</a>
                         </li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="#">Termos de Fomento</a>
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="">Termos de Fomento</a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a class="dropdown-item" href="#">Termo de Fomento 1491000967/2019</a>
+                            <a class="dropdown-item" href="{{ route('terms.index') }}">Termo de Fomento 1491000967/2019</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="#">Termo de Fomento 1371000951/2021</a>
+                            <a class="dropdown-item" href="{{ route('terms.index') }}">Termo de Fomento 1371000951/2021</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="#">Termo de Fomento 1371001352/2021</a>
+                            <a class="dropdown-item" href="{{ route('terms.index') }}">Termo de Fomento 1371001352/2021</a>
                         </li>
                     </ul>
                 </li>
@@ -56,7 +56,7 @@
         </div>
         <!-- botão login -->
         <div class="me-3">
-            <a class="btn btn-login btn-primary" href="/login">Fazer login</a>
+            <a class="btn btn-login btn-primary" href="{{ route('login.index') }}">Fazer login</a>
         </div>
         <div>
             <a class="btn btn-login btn-primary" href="/cadastro">Criar conta</a>
