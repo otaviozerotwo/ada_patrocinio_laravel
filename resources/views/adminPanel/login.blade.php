@@ -64,14 +64,36 @@
                     <p class="text-center small">Enter your username & password to login</p>
                   </div>
 
-                  <form class="row g-3 needs-validation" novalidate>
+                  @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                  @endif
 
+                  @if (session('danger'))
+                    <div class="alert alert-danger">
+                        {{ session('danger') }}
+                    </div>
+                  @endif
+
+                  @if (session('success'))
+                    <div class="alert alert-success">
+                        {{ session('success') }}
+                    </div>
+                  @endif
+
+                  <form class="row g-3 needs-validation" action="{{ route('adminPanel.auth') }}" enctype="multipart/form-data"method="POST">
+                    @csrf
                     <div class="col-12">
-                      <label for="yourUsername" class="form-label">Username</label>
+                      <label for="yourEmail" class="form-label">Email</label>
                       <div class="input-group has-validation">
                         <span class="input-group-text" id="inputGroupPrepend">@</span>
-                        <input type="text" name="username" class="form-control" id="yourUsername" required>
-                        <div class="invalid-feedback">Please enter your username.</div>
+                        <input type="email" name="email" class="form-control" id="yourEmail" required>
+                        <div class="invalid-feedback">Please enter your email.</div>
                       </div>
                     </div>
 

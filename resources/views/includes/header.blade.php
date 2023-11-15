@@ -59,7 +59,7 @@
             <a class="btn btn-login btn-primary" href="{{ route('login.index') }}">Fazer login</a>
         </div>
         <div>
-            <a class="btn btn-login btn-primary" href="/cadastro">Criar conta</a>
+            <a class="btn btn-login btn-primary" href="{{ route('cadastro.create') }}">Criar conta</a>
         </div>
     </div>
 </nav>

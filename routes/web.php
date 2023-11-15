@@ -23,11 +23,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class,'index'])->name('home.index');
-Route::get('/about', [AboutController::class,'index'])->name('about.index');
-Route::get('/contact', [ContactController::class,'index'])->name('contact.index');
-Route::get('/events', [EventsController::class,'index'])->name('events.index');
-Route::get('/howToHelp/voluntary', [HowToHelpController::class,'voluntary'])->name('howToHelp.voluntary');
-Route::get('/services/scheduleCastration', [ServicesController::class,'scheduleCastration'])->name('services.scheduleCastration');
+Route::get('about', [AboutController::class,'index'])->name('about.index');
+Route::get('contact', [ContactController::class,'index'])->name('contact.index');
+Route::get('events', [EventsController::class,'index'])->name('events.index');
+Route::get('howToHelp/voluntary', [HowToHelpController::class,'voluntary'])->name('howToHelp.voluntary');
+Route::get('services/scheduleCastration', [ServicesController::class,'scheduleCastration'])->name('services.scheduleCastration');
 
 Route::get('/terms/term-1', [TermsController::class, 'index'])->name('terms.index');
 
@@ -41,6 +41,8 @@ Route::controller(UserController::class)->group(function () {
 
 Route::get('adminPanel', [AuthController::class,'index'])->name('adminPanel.index');
 Route::get('adminPanel/login', [AuthController::class,'login'])->name('adminPanel.login');
-Route::get('adminPanel/register', [AuthController::class,'register'])->name('adminPanel.register');
+Route::post('adminPanel/login', [AuthController::class,'auth'])->name('adminPanel.auth');
+Route::get('adminPanel/register', [AuthController::class,'create'])->name('adminPanel.register');
+Route::post('adminPanel/register', [AuthController::class,'store'])->name('adminPanel.store');
 Route::get('adminPanel/forgot-password', [AuthController::class,'forgot'])->name('adminPanel.forgot-password');
 

@@ -77,7 +77,7 @@ class UserController extends Controller
 
         if (!empty($user)) {
             $user->email_verified_at = date('Y-m-d H:i:s');
-            $user->remember_token = Str::random(40);
+            $user->remember_token = Str::random(10);
             $user->save();
 
             return redirect('login')->with('success','E-mail verificado com sucesso!');
