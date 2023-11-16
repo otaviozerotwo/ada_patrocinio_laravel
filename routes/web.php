@@ -44,5 +44,6 @@ Route::get('adminPanel/login', [AuthController::class,'login'])->name('adminPane
 Route::post('adminPanel/login', [AuthController::class,'auth'])->name('adminPanel.auth');
 Route::get('adminPanel/register', [AuthController::class,'create'])->name('adminPanel.register');
 Route::post('adminPanel/register', [AuthController::class,'store'])->name('adminPanel.store');
-Route::get('adminPanel/forgot-password', [AuthController::class,'forgot'])->name('adminPanel.forgot-password');
+Route::get('adminPanel/forgot-password', [AuthController::class,'forgot'])->name('adminPanel.forgot');
+Route::post('adminPanel/forgot-password', [AuthController::class,'forgotPassword'])->name('adminPanel.forgot-password');
 

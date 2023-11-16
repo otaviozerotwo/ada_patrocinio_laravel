@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Register - AdminPanel</title>
+  <title>Cadastro - AdminPanel</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -50,7 +50,7 @@
 
               <div class="d-flex justify-content-center py-4">
                 <a href="{{ route('adminPanel.index') }}" class="logo d-flex align-items-center w-auto">
-                  <img src="{{ asset('assets/img/logo.png') }}" alt="">
+                  <img src="{{ asset('assets/img/img-site/logo_ada.png') }}" alt="">
                   <span class="d-none d-lg-block">ADA Patrocínio</span>
                 </a>
               </div><!-- End Logo -->
@@ -60,58 +60,41 @@
                 <div class="card-body">
 
                   <div class="pt-4 pb-2">
-                    <h5 class="card-title text-center pb-0 fs-4">Create an Account</h5>
-                    <p class="text-center small">Enter your personal details to create account</p>
+                    <h5 class="card-title text-center pb-0 fs-4">Cadastro de Usuários</h5>
+                    <p class="text-center small">Preencha os dados abaixo</p>
                   </div>
                   
-                  @if ($errors->any())
-                    <div class="alert alert-danger">
-                      <ul>
-                        @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                      </ul>
-                    </div>
-                  @endif
-
-                  @if (session('danger'))
-                    <div class="alert alert-danger">
-                        {{ session('danger') }}
-                    </div>
-                  @endif
-
                   <form class="row g-3 needs-validation" action="{{ route('adminPanel.store') }}" enctype="multipart/form-data"method="POST">
                     @csrf
                     <div class="col-12">
-                      <label for="yourName" class="form-label">Your Name</label>
-                      <input type="text" name="name" class="form-control" id="yourName" required>
-                      <div class="invalid-feedback">Please, enter your name!</div>
+                      <label for="yourName" class="form-label">Nome</label>
+                      <input type="text" name="name" value="{{ old('name') }}" class="form-control" id="yourName" required>
+                      <div style="color:red">{{ $errors->first('name') }}</div>
                     </div>
 
                     <div class="col-12">
-                      <label for="yourEmail" class="form-label">Your Email</label>
-                      <input type="email" name="email" class="form-control" id="yourEmail" required>
-                      <div class="invalid-feedback">Please enter a valid Email adddress!</div>
+                      <label for="yourEmail" class="form-label">Email</label>
+                      <input type="email" name="email" value="{{ old('email') }}"  class="form-control" id="yourEmail" required>
+                      <div style="color:red">{{ $errors->first('email') }}</div>
                     </div>
 
                     <div class="col-12">
-                      <label for="yourPassword" class="form-label">Password</label>
+                      <label for="yourPassword" class="form-label">Senha</label>
                       <input type="password" name="password" class="form-control" id="yourPassword" required>
-                      <div class="invalid-feedback">Please enter your password!</div>
+                      <div style="color:red">{{ $errors->first('password') }}</div>
                     </div>
 
                     <div class="col-12">
                       <div class="form-check">
                         <input class="form-check-input" name="terms" type="checkbox" id="acceptTerms" required>
-                        <label class="form-check-label" for="acceptTerms">I agree and accept the <a href="#">terms and conditions</a></label>
-                        <div class="invalid-feedback">You must agree before submitting.</div>
+                        <label class="form-check-label" for="acceptTerms">Li e concordo com os <a href="#">termos e condições</a></label>
                       </div>
                     </div>
                     <div class="col-12">
-                      <button class="btn btn-primary w-100" type="submit">Create Account</button>
+                      <button class="btn btn-primary w-100" type="submit">Criar conta</button>
                     </div>
                     <div class="col-12">
-                      <p class="small mb-0">Already have an account? <a href="{{ route('adminPanel.login') }}">Log in</a></p>
+                      <p class="small mb-0">Já possui uma conta? <a href="{{ route('adminPanel.login') }}">Login</a></p>
                     </div>
                   </form>
 

@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ForgotPasswordMail;
 use App\Models\User;
 use Auth;
 use Hash;
 use Illuminate\Http\Request;
 use Str;
+use Mail;
 
 class AuthController extends Controller
 {
@@ -22,6 +24,8 @@ class AuthController extends Controller
 
     public function auth(Request $request)
     {
+        $remember = !empty($request->remember) ? true : false;
+        
         $this->validate($request, [
             'email' => 'required|email',
             'password' => 'required',
@@ -31,7 +35,7 @@ class AuthController extends Controller
             'password.required'=> 'Campo senha é obrigatório!',
         ]);
 
-        if(Auth::attempt(['email'=> $request->email, 'password'=> $request->password])) {
+        if(Auth::attempt(['email'=> $request->email, 'password'=> $request->password], $remember)) {
             return redirect('/adminPanel');
         } else {
             return redirect()->back()->with('danger','e-mail ou senha inválidos!');
@@ -46,7 +50,7 @@ class AuthController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'email' => 'required|email',
+            'email' => 'required|email|unique:users',
             'password' => 'required|min:6',
             'name' => 'required'
         ],[
@@ -55,6 +59,7 @@ class AuthController extends Controller
             'password.required'=> 'Campo senha é obrigatório!',
             'password.min' => 'A senha precisa ter no mínimo :min caracteres!',
             'name.required'=> 'Campo nome é obrigatório!',
+            'email.unique' => 'Esse e-mail já possui cadastro!',
         ]);
 
         $userName = $request->input('name');
@@ -75,5 +80,18 @@ class AuthController extends Controller
     public function forgot()
     {
         return view('adminPanel.forgot');
+    }
+
+    public function forgotPassword(Request $request)
+    {
+        $user = User::where('email', '=', $request->email)->first();
+
+        if(!empty($user))
+        {
+            $user->remember_token = Str::random(10);
+            $user->save();
+
+            Mail::to($user->email)->send(new ForgotPasswordMail($user->email, $user->remember_token));
+        }
     }
 }
