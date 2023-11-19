@@ -37,10 +37,8 @@
     <!-- sessão #1 - conteúdo home -->
     <div class="row align-items-start">
         <div class="col-lg-6 align-self-center">
-            <div class="pagetitle">
-                <h1 class="card-title">ADA Patrocínio</h1>
-            </div>
-
+            <h1 class="mb-5">ADA Patrocínio</h1>
+            
             <p class="card-text">A ADA é uma ONG (Organização Não Governamental), sem fins lucrativos, com
                 personalidade jurídica regida pelo direito privado, fundada em 2005 com a missão de disseminar o
                 conhecimento sobre a causa animal para a população de Patrocínio-MG. Para isso, trabalhamos a

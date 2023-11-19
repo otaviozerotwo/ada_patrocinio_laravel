@@ -128,10 +128,6 @@ body{
 
 /* -------------------- sessão #1 - conteúdo home e about-------------------- */
 
-.container-modificado{
-    margin-top: 10px;
-}
-
 .sessao1-img{
     --bs-border-width: 0px !important;
 }
@@ -208,19 +204,6 @@ body{
   }
 
   /*--------------------------------------------------------------
-# Page Title
---------------------------------------------------------------*/
-/* .pagetitle {
-    margin-bottom: 10px;
-  }
-  
-  .pagetitle h1 {
-    font-size: 24px;
-    margin-bottom: 0;
-    font-weight: 600;
-    color: #012970;
-  } */
-
 
 /*--------------------------------------------------------------
 # Contact

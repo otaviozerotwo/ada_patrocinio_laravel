@@ -28,8 +28,7 @@ Route::get('contact', [ContactController::class,'index'])->name('contact.index')
 Route::get('events', [EventsController::class,'index'])->name('events.index');
 Route::get('howToHelp/voluntary', [HowToHelpController::class,'voluntary'])->name('howToHelp.voluntary');
 Route::get('services/scheduleCastration', [ServicesController::class,'scheduleCastration'])->name('services.scheduleCastration');
-
-Route::get('/terms/term-1', [TermsController::class, 'index'])->name('terms.index');
+Route::get('terms', [TermsController::class, 'index'])->name('terms.index');
 
 Route::controller(UserController::class)->group(function () {
     Route::get('login', [UserController::class, 'index'])->name('login.index');

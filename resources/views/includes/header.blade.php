@@ -39,18 +39,7 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="">Termos de Fomento</a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a class="dropdown-item" href="{{ route('terms.index') }}">Termo de Fomento 1491000967/2019</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="{{ route('terms.index') }}">Termo de Fomento 1371000951/2021</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="{{ route('terms.index') }}">Termo de Fomento 1371001352/2021</a>
-                        </li>
-                    </ul>
+                    <a class="nav-link" href="{{ route('terms.index') }}">Termos de Fomento</a>
                 </li>
             </ul>
         </div>
