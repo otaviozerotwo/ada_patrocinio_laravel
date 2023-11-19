@@ -23,34 +23,53 @@
                 <div class="row">
                 <div class="col-lg-6">
                     <div class="info-box card">
-                        <i class="bi bi-geo-alt"></i>
-                        <h3>Endereço</h3>
-                        <p>Rua Marechal Floriano n°76 sala 02,<br>Centro, Patrocínio-MG</p>
+                        <div class="d-flex">
+                            <i class="bi bi-geo-alt align-self-center"></i>
+                            <h3 class="ms-3 mb-4">Endereço</h3>
+                        </div>
+                        <p>Rua Marechal Floriano n°76<br> Sala 02<br>Centro, Patrocínio-MG</p>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="info-box card">
-                        <i class="bi bi-telephone"></i>
-                        <h3>Whatsapp</h3>
-                        <p>34 99201-4610</p>
+                        <div class="d-flex">
+                            <i class="bi bi-whatsapp align-self-center"></i>
+                            <h3 class="ms-3 mb-4">Whatsapp</h3>                    
+                        </div>
+                        <p class="mt-4">
+                            <a class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"href="https://wa.me/5534992014610" target="_blank">34 99201-4610</a>
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="info-box card">
-                        <i class="bi bi-envelope"></i>
-                        <h3>Email</h3>
-                        <p>adapatrocinio@hotmail.com</p>
+                        <div class="d-flex">
+                            <i class="bi bi-envelope align-self-center"></i>
+                            <h3 class="ms-3 mb-4">Email</h3>
+                        </div>
+                        <p class="mt-4">
+                            <a class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="mailto:adapatrocinio@hotmail.com">adapatrocinio@hotmail.com</a>
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="info-box card">
-                        <i class="bi bi-clock"></i>
-                        <h3>Horário de atendimento</h3>
-                        <p>Segunda a Sexta<br>9:00 - 17:00</p>
-                        <p>Sábado<br>9:00 - 11:00</p>
+                        <div class="d-flex">
+                            <i class="bi bi-clock align-self-center"></i>
+                            <h3 class="ms-3 mb-4">Horário de atendimento</h3>
+                        </div>
+                        <p>Segunda a Sexta - 9:00 as 17:00</p><br>
+                        <p>Sábado - 9:00 as 11:00</p><br>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="col-lg-6">
+            <picture class="sessao1-img">
+                <source srcset="{{ asset('assets/img/img-site/img-home-1.jpeg') }}" type="image/jpg">
+                <img src="{{ asset('assets/img/img-site/img-home-1.jpeg') }}" class="img-fluid img-thumbnail" alt="...">
+            </picture>
         </div>
     </section>
 </main>
