@@ -132,10 +132,6 @@ body{
     margin-top: 10px;
 }
 
-.pagetitle{
-    padding-bottom: 40px;
-}
-
 .sessao1-img{
     --bs-border-width: 0px !important;
 }

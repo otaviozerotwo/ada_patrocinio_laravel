@@ -13,7 +13,7 @@
 
 <main id="main" class="main container">
 
-    <div class="pagetitle">
+    <div class="pb-5">
         <h1>Fale Conosco</h1>
     </div>
 
