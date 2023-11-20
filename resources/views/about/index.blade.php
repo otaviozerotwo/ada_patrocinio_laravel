@@ -2,32 +2,31 @@
 
 @section('content')
 
-<main>
-    <div class="container mt-3">
-        <!-- sessão #1 - conteúdo about -->
-        <div class="row align-items-start">
-            <div class="col-lg-6 align-self-center">
-                <h1 class="mb-5">ADA Patrocínio</h1>
-                <p>
-                    A ADA é uma ONG (Organização Não Governamental), sem fins lucrativos, com
-                    personalidade jurídica regida pelo direito privado, fundada em 2005 com a missão de disseminar o
-                    conhecimento sobre a causa animal para a população de Patrocínio-MG. Para isso, trabalhamos a
-                    educação sobre guarda responsável e, respeito aos direitos dos animais, além de defender a
-                    esterilização (castração) de cães e gatos como forma de controle populacional e promoção do bem
-                    estar dos animais.
-                </p>
-            </div>
-
-            <div class="col-lg-6">
-                <picture class="sessao1-img">
-                    <source srcset="{{ asset('assets/img/img-site/img-about-1.jpeg') }}" type="image/jpeg">
-                    <img src="{{ asset('assets/img/img-site/img-about-1.jpeg') }}" class="img-fluid img-thumbnail" alt="...">
-                </picture>
-            </div>
+<main class="container mt-3">
+    <section class="row align-items-start">
+        <div class="col-lg-6 align-self-center">
+            <h1 class="mb-5">ADA Patrocínio</h1>
+            <p>
+                A ADA é uma ONG (Organização Não Governamental), sem fins lucrativos, com
+                personalidade jurídica regida pelo direito privado, fundada em 2005 com a missão de disseminar o
+                conhecimento sobre a causa animal para a população de Patrocínio-MG. Para isso, trabalhamos a
+                educação sobre guarda responsável e, respeito aos direitos dos animais, além de defender a
+                esterilização (castração) de cães e gatos como forma de controle populacional e promoção do bem
+                estar dos animais.
+            </p>
         </div>
-        <!-- sessão #2 - conteúdo about -->
-        <div class="row justify-content-center">
-            <h2 class="my-5">Quem Somos</h2>
+
+        <div class="col-lg-6">
+            <picture class="sessao1-img">
+                <source srcset="{{ asset('assets/img/img-site/img-about-1.jpeg') }}" type="image/jpeg">
+                <img src="{{ asset('assets/img/img-site/img-about-1.jpeg') }}" class="img-fluid img-thumbnail" alt="...">
+            </picture>
+        </div>
+    </section>
+    
+    <section class="row justify-content-center">
+        <h2 class="my-5">Quem Somos</h2>
+        <div>
             <p>
                 A ADA surgiu de um pequeno grupo de pessoas que compartilhavam o mesmo sentimento de respeito à
                 vida,
@@ -57,11 +56,11 @@
                 de
                 medicamentos, insumos e fazer manutenção da entidade.<br><br>
             </p>
-            <div class="mt-5">
-                <strong>PROJETO CASTRA MÓVEL É MANTIDO COM RECURSOS PRÓPRIOS. A ADA NÃO POSSUI PARCERIA COM O MUNICIPIO PARA EXECUÇÃO DE PROJETO DE CASTRAÇÃO DE ANIMAIS.<br><br></strong>
-            </div>
         </div>
-    </div>
+        <div class="mt-5">
+            <strong>PROJETO CASTRA MÓVEL É MANTIDO COM RECURSOS PRÓPRIOS. A ADA NÃO POSSUI PARCERIA COM O MUNICIPIO PARA EXECUÇÃO DE PROJETO DE CASTRAÇÃO DE ANIMAIS.<br><br></strong>
+        </div>
+    </section>
 </main>
 
 @endsection

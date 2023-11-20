@@ -3,7 +3,7 @@
 @section('content')
 
 <main class="container mt-3">
-    <div class="row align-items-start">
+    <section class="row align-items-start">
         <div class="col-lg-6 align-self-center">
             <h1 class="mb-5">Termos de Fomento</h1>
             <p>
@@ -21,7 +21,14 @@
                 <img src="{{ asset('assets/img/img-site/img-home-1.jpeg') }}" class="img-fluid img-thumbnail" alt="...">
             </picture>
         </div>
-    </div>
+    </section>
+
+    <section>
+        <h2 class="my-5">Título provisório</h2>
+        <div>
+            inserir aqui links para termos de fomento
+        </div>
+    </section>
 </main>
 
 @endsection
