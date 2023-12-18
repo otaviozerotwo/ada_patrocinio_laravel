@@ -62,13 +62,13 @@ class UserController extends Controller
         $user->name = $userName;
         $user->email = $userEmail;
         $user->password = Hash::make($userPassword);
-        $user->remember_token = Str::random(40);
+        $user->remember_token = Str::random(10);
         
         $user->save();
 
         Mail::to($user->email)->send(new RegisterMail($user));
 
-        return redirect('login')->with('success','Verifique sua caixa de email para ativar o cadastro!');
+        return redirect('login')->with('success','Cadastro efetuado com sucesso!');
     }
 
     public function verify($token)
